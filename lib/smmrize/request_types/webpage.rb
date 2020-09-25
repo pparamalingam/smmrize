@@ -30,7 +30,7 @@ module Smmrize
       query_string += "&SM_WITH_BREAK"
     end
 
-    Smmrize::Defaults.api_url + query_string + "&SM_URL=#{CGI::escape(options[:url])}"
+    Smmrize::Defaults.api_url + query_string + "&SM_URL=#{options[:url]}"
   end
 
   def self.webpage_option_defaults
